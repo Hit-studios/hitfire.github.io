@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+body {
+    background-image: linear-gradient(to bottom right, #b00b69, #420a55, #042069);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right:10%;
+
+}
+
+br{
+	line-height: 0.5;
+}
+
+h2{
+	font-family: 'Press Start 2P', cursive;
+	margin-right:10%;
+}
+p{
+	color: lightblue;
+	
+	line-size: 1.1;
+	display: inline;
+}
+h3{
+	color: orange;
+	margin-right:10%;
+	}
+.breadcrumb{
+	font-family: 'VT323', monospace;
+}
+a{
+	color: linear-gradient(to bottom right, #b00b69, #420a55, #042069);
+	font-family: times-new-roman;
+}
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+/* The sidebar links */
+.sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: darkblue;
+        display: block;
+        transition: 0.3s;
+    }
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+            color: #f1f1f1;
+        }
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.openbtn:hover {
+        background-color: #444;
+    }
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+}
+/* Style the search box */
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+/* Style the navigation menu */
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* Style the navigation links */
+#myMenu li a {
+        padding: 12px;
+        text-decoration: none;
+        color: darkblue;
+        display: block
+    }
+#myMenu li a:hover {
+            background-color: #eee;
+        }
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+	margin-right: -10%;
+}
+/* Display list items side by side */
+ul.breadcrumb li {
+        display: inline;
+        font-size: 18px;
+    }
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+        }
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+                color: #01447e;
+                text-decoration: underline;
+            }
+
+/* Popup container */
+.popup {
+  position: sticky;
+  display: inline;
+  cursor: pointer;
+  left: -140px;
+  margin: 0;
+  margin-right: -140px;
+  color: lightgreen;
+
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
