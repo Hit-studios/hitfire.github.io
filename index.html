@@ -2,21 +2,26 @@
 <link rel="stylesheet" href="css docs/home.css">
 <html lang="en">
   <head><title>HitFire</title></head>
-<div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-    <ul id="myMenu">
-        <li><a href="index.html">home</a></li>
+  <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close search bar">&times;</a>
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..." title="Type in the desired page name">
+      <ul id="myMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="game_info.html">Game Info</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="concepts.html">Concepts</a></li>
 
-    </ul>
-</div>
+      </ul>
+  </div>
+
+
+
   <div id="main">
-    <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+    <button class="openbtn" onclick="openNav()" title="Open the search bar">&#9776; </button>
     <script src="js docs\sidebar.js"></script>
     <script src="js docs\search.js"></script>
 
 
-	
 	<script>
 	// When the user clicks on <div>, open the popup
 	function myFunction() {
@@ -24,8 +29,7 @@
 	  popup.classList.toggle("show");
 	}
 	</script>
-		
-	  
+
 
 </div>
 </html>

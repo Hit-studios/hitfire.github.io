@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-@font-face {
-    font-family: 'vineta';
-    src: url('fonts/vineta/vinetarg-webfont.woff2') format('woff2'),
-         url('fonts/vineta/vinetarg-webfont.woff') format('woff'),
-         url('fonts/vineta/vinetarg.tff') format('tff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 body {
     background-image: linear-gradient(to bottom right, #16054d,#1a1c41);
 	background-repeat: no-repeat;
@@ -50,21 +39,23 @@ a{
 	font-family: times-new-roman;
 }
 
-
-
 /* The sidebar menu */
 .sidebar {
-    height: 100%; /* 100% Full-height */
+    height: 0; /* 0 height - change this with JavaScript */
     width: 0; /* 0 width - change this with JavaScript */
+    max-width: 250px; /* limit the width of sidebar to 250 px*/
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
     background-color: #1a1c41;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    overflow-y: hidden; /* Disable vertical scroll */
+    padding-top: 3%; /* Place content 3% from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    
 }
+
 /* The sidebar links */
 .sidebar a {
         padding: 8px 8px 8px 32px;
@@ -87,7 +78,7 @@ a{
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
-        color: white;
+        color: #fff200;
     }
 
 .sidebar .closebtn:hover {
@@ -103,15 +94,17 @@ a{
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
+    background-color: #fff200;
+    color: #1a1c41;
+    padding: 1% 1.5%;
     border: none;
+    border-radius: 10%;
 }
 
 .openbtn:hover {
         background-color: #fdeca6;
-        color: #1a1c41;
+        border: 0.8% solid #fff200;
+        color: black;
     }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -119,14 +112,33 @@ a{
     transition: margin-left .5s; /* If you want a transition effect */
     padding: 20px;
 }
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {
         padding-top: 15px;
+        max-width: 100px;
     }
 
-        .sidebar a {
-            font-size: 18px;
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    /* The button used to open the sidebar */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #fff200;
+        color: #1a1c41;
+        padding: 3% 4.5%;
+        border: none;
+        border-radius: 10%;
+    }
+
+    .openbtn:hover {
+            background-color: #fdeca6;
+            border: 0.8% solid #fff200;
+            color: black;
         }
 }
 
@@ -137,6 +149,7 @@ a{
     padding: 11px;
     border: 0px solid #ddd;
     background: radial-gradient(#16054d,#1a1c41);
+    color: #fff200;
 }
 
 /* Style the navigation menu */
@@ -162,10 +175,10 @@ a{
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
-  to {opacity: 1;}
+  to   {opacity: 1;}
 }
 
 @keyframes fadeIn {
   from {opacity: 0;}
-  to {opacity:1 ;}
+  to   {opacity: 1;}
 }
