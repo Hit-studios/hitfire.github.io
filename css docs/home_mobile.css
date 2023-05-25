@@ -113,34 +113,27 @@ a{
     padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 320px) {
-    .sidebar {
-        padding-top: 15px;
-        max-width: 100px;
-    }
 
-    .sidebar a {
-        font-size: 18px;
-    }
-
-    /* The button used to open the sidebar */
-    .openbtn {
-        font-size: 20px;
-        cursor: pointer;
-        background-color: #fff200;
-        color: #1a1c41;
-        padding: 30% 45%;
-        border: none;
-        border-radius: 10%;
-    }
-
-    .openbtn:hover {
-            background-color: #fdeca6;
-            border: 0.8% solid #fff200;
-            color: black;
-        }
+.sidebar {
+    padding-top: 15px;
+    max-width: 100px;
 }
+
+.sidebar a {
+    font-size: 18px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff200;
+    color: #1a1c41;
+    padding: 30% 45%;
+    border: none;
+    border-radius: 10%;
+}
+
 
 /* Style the search box */
 #mySearch {
