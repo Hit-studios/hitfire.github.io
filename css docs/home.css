@@ -41,7 +41,7 @@ a{
 
 /* The sidebar menu */
 .sidebar {
-    height: 0; /* 0 height - change this with JavaScript */
+    height: 45%; /* 0 height - change this with JavaScript */
     width: 0; /* 0 width - change this with JavaScript */
     max-width: 250px; /* limit the width of sidebar to 250 px*/
     position: fixed; /* Stay in place */
